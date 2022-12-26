@@ -5,17 +5,17 @@ public class MainSinifim {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); //Scanner'ı tanımlıyoruz.
 		
-		System.out.print("Lütfen kilonuzu giriniz(kg):");
+		System.out.print("Lütfen kilonuzu giriniz(kg):");// Burada ise kullanıcıdan input alarak boy ve kilosunu alıyoruz.
 		int kilo = scanner.nextInt();
 		System.out.print("Lütfen boyunuzu giriniz:(m): ");
 		double boy = scanner.nextDouble();
 		
-		double bmi = kilo / (boy*boy);
+		double bmi = kilo / (boy*boy); //Burda da aldığımız bilgiler ile boy kilo kütlesinin indeksini çıkarıyoruz.
 		System.out.println("Boy kilo kütleniz: " + bmi);
 		
-		if (bmi<18.5)
+		if (bmi<18.5) // Buradan sonrasın da if else koşullu ifadelerini kullanıp boy ve kilosuna göre durum belirliyoruz.
 		{
 			System.out.print("Sonuç: Zayıf");
 		}
